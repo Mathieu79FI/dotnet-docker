@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.2.104-sdk-stretch AS base
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2.104-stretch AS base
 
 FROM base AS build
 ENV NODE_VERSION 10.15.2
