@@ -7,6 +7,6 @@ Available on [Docker Hub](https://hub.docker.com/r/mathieu79/dotnet-sdk-nodejs-g
 
 # Ingredients
 
-* Based on docker images from [microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet)
+* Based on docker images from [mcr.microsoft.com/dotnet/core/sdk](https://hub.docker.com/_/microsoft-dotnet-core-sdk/)
 * [NodeJS](https://nodejs.org/)
 * [Gulp](https://gulpjs.com/)
