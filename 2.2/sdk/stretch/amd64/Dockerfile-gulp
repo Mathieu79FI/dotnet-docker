@@ -1,8 +1,8 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2.104-stretch AS base
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2.105-stretch AS base
 
 FROM base AS build
-ENV NODE_VERSION 10.15.2
-ENV NODE_DOWNLOAD_SHA 65e66599b275e2c41a882610a841a990e0570ed03bfccc378e031c475a3dae52
+ENV NODE_VERSION 10.15.3
+ENV NODE_DOWNLOAD_SHA 6c35b85a7cd4188ab7578354277b2b2ca43eacc864a2a16b3669753ec2369d52
 RUN curl -SL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.gz" --output nodejs.tar.gz \
     && echo "$NODE_DOWNLOAD_SHA  nodejs.tar.gz" | sha256sum -c - \
     && tar -xzf "nodejs.tar.gz" -C /usr/local --strip-components=1 \
