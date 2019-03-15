@@ -1,0 +1,8 @@
+version: 1
+
+update_configs:
+  - package_manager: "docker"
+    directory: "/2.2/sdk/stretch/amd64"
+    update_schedule: "weekly"
+    default_assignees:
+    - "Mathieu79FI"
