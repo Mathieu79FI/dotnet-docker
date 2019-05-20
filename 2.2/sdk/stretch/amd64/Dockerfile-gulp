@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2.203-stretch AS base
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2.204-stretch AS base
 
 FROM base AS build
 ENV NODE_VERSION 10.15.3
@@ -7,7 +7,7 @@ RUN curl -SL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-lin
     && echo "$NODE_DOWNLOAD_SHA  nodejs.tar.gz" | sha256sum -c - \
     && tar -xzf "nodejs.tar.gz" -C /usr/local --strip-components=1 \
     && ln -s /usr/local/bin/node /usr/local/bin/nodejs \
-    && npm install --global gulp-cli@2.0.1
+    && npm install --global gulp-cli@2.2.0
 
 FROM base AS final
 COPY --from=build /usr/local/bin /usr/local/bin
