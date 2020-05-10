@@ -2,12 +2,12 @@ version: 1
 
 update_configs:
   - package_manager: "docker"
-    directory: "/3.0/sdk/buster/amd64/grunt"
+    directory: "/3.1/sdk/buster/amd64/grunt"
     update_schedule: "weekly"
     default_assignees:
     - "Mathieu79FI"
   - package_manager: "docker"
-    directory: "/3.0/sdk/buster/amd64/gulp"
+    directory: "/3.1/sdk/buster/amd64/gulp"
     update_schedule: "weekly"
     default_assignees:
     - "Mathieu79FI"
