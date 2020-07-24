@@ -1,8 +1,8 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1.301-buster AS base
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1.302-buster AS base
 
 FROM base AS build
-ENV NODE_VERSION 12.18.0
-ENV NODE_DOWNLOAD_SHA 9526c0ee225037fc49a00e4bd5c5e2db26053f3f7c9ad124f5763d2eb80cff16
+ENV NODE_VERSION 12.18.3
+ENV NODE_DOWNLOAD_SHA 8cdacecc43c35bcfa5474c793b9e7a01835e4171264f7b13f3e57093371872e9
 RUN curl -SL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.gz" --output nodejs.tar.gz \
     && echo "$NODE_DOWNLOAD_SHA  nodejs.tar.gz" | sha256sum -c - \
     && tar -xzf "nodejs.tar.gz" -C /usr/local --strip-components=1 \
