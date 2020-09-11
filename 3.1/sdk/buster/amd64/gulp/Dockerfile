@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1.401-buster AS base
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1.402-buster AS base
 
 FROM base AS build
 ENV NODE_VERSION 12.18.3
