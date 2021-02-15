@@ -3,11 +3,11 @@ Microsoft removed NodeJS from their .NET Core Docker images ([announcement](http
 
 # Ingredients
 * Based on docker image [mcr.microsoft.com/dotnet/core/sdk](https://hub.docker.com/_/microsoft-dotnet-core-sdk/):3.1.406-buster
-* [NodeJS](https://nodejs.org/) LTS 14.15.5
+* [NodeJS](https://nodejs.org/) LTS 12.18.3
 * [Grunt-cli](https://www.npmjs.com/package/grunt-cli) 1.3.2
 
 # Full Tag Listing
 ## Linux amd64 tags
 - [`2.2.402-sdk-stretch`, `2.2-sdk` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/2.2/sdk/stretch/amd64/Dockerfile-grunt)
 - [`3.0.103-sdk-buster`, `3.0-sdk` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/3.0/sdk/buster/amd64/grunt/Dockerfile)
-- [`3.1.403-sdk-buster`, `3.1-sdk`, `latest` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/3.1/sdk/buster/amd64/grunt/Dockerfile)
+- [`3.1.406-sdk-buster`, `3.1-sdk` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/3.1/sdk/buster/amd64/grunt/Dockerfile)
