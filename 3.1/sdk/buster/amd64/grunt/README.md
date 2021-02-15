@@ -2,8 +2,8 @@
 Microsoft removed NodeJS from their .NET Core Docker images ([announcement](https://github.com/aspnet/Announcements/issues/298)). This image adds back NodeJS for build time with Grunt pre-installed.
 
 # Ingredients
-* Based on docker image [mcr.microsoft.com/dotnet/core/sdk](https://hub.docker.com/_/microsoft-dotnet-core-sdk/):3.1.402-buster
-* [NodeJS](https://nodejs.org/) LTS 12.19.0
+* Based on docker image [mcr.microsoft.com/dotnet/core/sdk](https://hub.docker.com/_/microsoft-dotnet-core-sdk/):3.1.406-buster
+* [NodeJS](https://nodejs.org/) LTS 14.15.5
 * [Grunt-cli](https://www.npmjs.com/package/grunt-cli) 1.3.2
 
 # Full Tag Listing
