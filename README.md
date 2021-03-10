@@ -7,7 +7,8 @@ Available on Docker Hub [[Gulp](https://hub.docker.com/r/mathieu79/dotnet-sdk-no
 
 # Ingredients
 
-* Based on docker images from [mcr.microsoft.com/dotnet/core/sdk](https://hub.docker.com/_/microsoft-dotnet-core-sdk/)
+* Based on docker images from [mcr.microsoft.com/dotnet/sdk](https://hub.docker.com/_/microsoft-dotnet-sdk)
 * [NodeJS](https://nodejs.org/)
 * [Gulp](https://gulpjs.com/)
 * [Grunt](https://gruntjs.com/)
+* [Webpack](https://webpack.js.org/)
