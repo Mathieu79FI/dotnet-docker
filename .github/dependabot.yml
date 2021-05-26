@@ -1,0 +1,26 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  directory: "/3.1/sdk/buster/amd64/grunt"
+  schedule:
+    interval: weekly
+    time: "03:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - Mathieu79FI
+  ignore:
+  - dependency-name: dotnet/core/sdk
+    versions:
+    - 3.1.405.pre.buster
+- package-ecosystem: docker
+  directory: "/3.1/sdk/buster/amd64/gulp"
+  schedule:
+    interval: weekly
+    time: "03:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - Mathieu79FI
+  ignore:
+  - dependency-name: dotnet/core/sdk
+    versions:
+    - 3.1.405.pre.buster
