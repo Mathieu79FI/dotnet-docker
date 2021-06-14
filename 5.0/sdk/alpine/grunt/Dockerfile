@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:5.0.300-alpine3.13 AS base
+FROM mcr.microsoft.com/dotnet/sdk:5.0.301-alpine3.13 AS base
 
 FROM base AS build
 ENV NODE_VERSION 14.17.0
