@@ -7,7 +7,7 @@ RUN curl -SL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-lin
     && echo "$NODE_DOWNLOAD_SHA  nodejs.tar.gz" | sha256sum -c - \
     && tar -xzf "nodejs.tar.gz" -C /usr/local --strip-components=1 \
     && ln -s /usr/local/bin/node /usr/local/bin/nodejs \
-    && npm install --global webpack@5.38.1 webpack-cli@4.7.2
+    && npm install --global webpack@5.52.0 webpack-cli@4.8.0
 
 FROM base AS final
 COPY --from=build /usr/local/bin /usr/local/bin
