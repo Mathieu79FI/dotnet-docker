@@ -10,5 +10,5 @@ Microsoft removed NodeJS from their .NET Core Docker images ([announcement](http
 # Full Tag Listing
 ## Linux amd64 tags
 - [`5.0.403-bullseye-slim` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/5.0/sdk/bullseye-slim/webpack/Dockerfile)
-- [`5.0.403-buster-slim`, `5.0-sdk`, `latest` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/5.0/sdk/buster-slim/webpack/Dockerfile)
+- [`5.0.403-buster-slim`, `5.0-sdk` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/5.0/sdk/buster-slim/webpack/Dockerfile)
 - [`5.0.403-alpine`, `5.0-sdk-alpine` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/5.0/sdk/alpine/webpack/Dockerfile)
