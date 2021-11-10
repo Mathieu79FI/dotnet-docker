@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:5.0.402-bullseye-slim AS base
+FROM mcr.microsoft.com/dotnet/sdk:5.0.403-buster-slim AS base
 
 FROM base AS build
 ENV NODE_VERSION 16.13.0
