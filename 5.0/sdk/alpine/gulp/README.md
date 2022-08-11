@@ -2,8 +2,8 @@
 Microsoft removed NodeJS from their .NET Core Docker images ([announcement](https://github.com/aspnet/Announcements/issues/298)). This image adds back NodeJS for build time with Gulp pre-installed.
 
 # Ingredients
-* Based on docker image [mcr.microsoft.com/dotnet/sdk](https://hub.docker.com/_/microsoft-dotnet-sdk/):5.0.403-alpine3.14
-* [NodeJS](https://nodejs.org/) LTS 16.13.0
+* Based on docker image [mcr.microsoft.com/dotnet/sdk](https://hub.docker.com/_/microsoft-dotnet-sdk/):5.0.408-alpine3.14
+* [NodeJS](https://nodejs.org/) LTS 16.16.0
 * [Gulp-cli](https://www.npmjs.com/package/gulp-cli) 2.3.0
 
 # Full Tag Listing
@@ -11,6 +11,6 @@ Microsoft removed NodeJS from their .NET Core Docker images ([announcement](http
 - [`2.2.402-sdk-stretch`, `2.2-sdk` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/2.2/sdk/stretch/amd64/Dockerfile-gulp)
 - [`3.0.103-sdk-buster`, `3.0-sdk` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/3.0/sdk/buster/amd64/gulp/Dockerfile)
 - [`3.1.415-sdk-buster`, `3.1-sdk` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/3.1/sdk/buster/amd64/gulp/Dockerfile)
-- [`5.0.403-buster-slim`, `5.0-sdk` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/5.0/sdk/buster-slim/gulp/Dockerfile)
-- [`5.0.403-bullseye-slim` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/5.0/sdk/bullseye-slim/gulp/Dockerfile)
-- [`5.0.403-alpine`, `5.0-sdk-alpine` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/5.0/sdk/alpine/gulp/Dockerfile)
+- [`5.0.408-buster-slim`, `5.0-sdk` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/5.0/sdk/buster-slim/gulp/Dockerfile)
+- [`5.0.408-bullseye-slim` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/5.0/sdk/bullseye-slim/gulp/Dockerfile)
+- [`5.0.408-alpine`, `5.0-sdk-alpine` (*Dockerfile*)](https://github.com/Mathieu79FI/dotnet-docker/blob/master/5.0/sdk/alpine/gulp/Dockerfile)
