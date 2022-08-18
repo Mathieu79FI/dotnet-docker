@@ -1,8 +1,8 @@
-FROM mcr.microsoft.com/dotnet/sdk:5.0.403-bullseye-slim AS base
+FROM mcr.microsoft.com/dotnet/sdk:5.0.408-bullseye-slim AS base
 
 FROM base AS build
-ENV NODE_VERSION 16.13.0
-ENV NODE_DOWNLOAD_SHA 589b7e7eb22f8358797a2c14a0bd865459d0b44458b8f05d2721294dacc7f734
+ENV NODE_VERSION 16.16.0
+ENV NODE_DOWNLOAD_SHA c85b16d1a4c259d01be7111ecb0361260627e4fc245004a920521eacb28e50df
 RUN curl -SL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.gz" --output nodejs.tar.gz \
     && echo "$NODE_DOWNLOAD_SHA  nodejs.tar.gz" | sha256sum -c - \
     && tar -xzf "nodejs.tar.gz" -C /usr/local --strip-components=1 \

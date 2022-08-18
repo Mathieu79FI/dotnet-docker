@@ -1,13 +1,13 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0.100-alpine3.14 AS base
+FROM mcr.microsoft.com/dotnet/sdk:6.0.400-alpine3.16 AS base
 
 FROM base AS build
-ENV NODE_VERSION 16.13.0
-ENV NODE_DOWNLOAD_SHA 24eea15a7180dd246ccbe1ef2a57d1c52b2cd21c582a307bafeb6b3af11da348
+ENV NODE_VERSION 16.16.0
+ENV NODE_DOWNLOAD_SHA c807c2b7645cb59b45f051b6add306bd037224de0c6e43010c3467bcbf918ce2
 RUN curl -SL "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64-musl.tar.gz" --output nodejs.tar.gz \
     && echo "$NODE_DOWNLOAD_SHA  nodejs.tar.gz" | sha256sum -c - \
     && tar -xzf "nodejs.tar.gz" -C /usr/local --strip-components=1 --no-same-owner \
     && ln -s /usr/local/bin/node /usr/local/bin/nodejs \
-    && npm install --global webpack@5.62.1 webpack-cli@4.9.1
+    && npm install --global webpack@5.74.0 webpack-cli@4.10.0
 
 FROM base AS final
 COPY --from=build /usr/local/bin /usr/local/bin
