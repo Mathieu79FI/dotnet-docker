@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:7.0.403-alpine3.18 AS base
+FROM mcr.microsoft.com/dotnet/sdk:7.0.404-alpine3.18 AS base
 
 FROM base AS build
 ENV NODE_VERSION 20.9.0

@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:7.0.403-bullseye-slim AS base
+FROM mcr.microsoft.com/dotnet/sdk:7.0.404-bullseye-slim AS base
 
 FROM base AS build
 ENV NODE_VERSION 20.9.0
