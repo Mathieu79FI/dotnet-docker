@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0.412-alpine3.18 AS base
+FROM mcr.microsoft.com/dotnet/sdk:6.0.418-alpine3.18 AS base
 
 FROM base AS build
 ENV NODE_VERSION 18.17.0
