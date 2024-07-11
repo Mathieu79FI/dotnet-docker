@@ -1,13 +1,13 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0.412-alpine3.18 AS base
+FROM mcr.microsoft.com/dotnet/sdk:6.0.424-alpine3.19 AS base
 
 FROM base AS build
-ENV NODE_VERSION 18.17.0
-ENV NODE_DOWNLOAD_SHA 35266c106ce2eba7b190ad67327be1e52b77935b552bddcad29bdf3b302f4cb5
+ENV NODE_VERSION=20.15.1
+ENV NODE_DOWNLOAD_SHA=dae1531b366f8406d7dd169a4c933141579ce8950aeed355261d8014c9ea2c7e
 RUN curl -SL "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64-musl.tar.gz" --output nodejs.tar.gz \
     && echo "$NODE_DOWNLOAD_SHA  nodejs.tar.gz" | sha256sum -c - \
     && tar -xzf "nodejs.tar.gz" -C /usr/local --strip-components=1 --no-same-owner \
     && ln -s /usr/local/bin/node /usr/local/bin/nodejs \
-    && npm install --global grunt-cli@1.4.3
+    && npm install --global grunt@1.6.1 grunt-cli@1.4.3
 
 FROM base AS final
 COPY --from=build /usr/local/bin /usr/local/bin

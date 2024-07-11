@@ -1,13 +1,13 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0.412-bullseye-slim AS base
+FROM mcr.microsoft.com/dotnet/sdk:6.0.424-bullseye-slim AS base
 
 FROM base AS build
-ENV NODE_VERSION 18.17.0
-ENV NODE_DOWNLOAD_SHA 5c4a7fd9262c0c47bafab3442de6c3fed1602be3d243cb8cf11309a201955e75
+ENV NODE_VERSION=20.15.1
+ENV NODE_DOWNLOAD_SHA=a9db028c0a1c63e3aa0d97de24b0966bc507d8239b3aedc4e752eea6b0580665
 RUN curl -SL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.gz" --output nodejs.tar.gz \
     && echo "$NODE_DOWNLOAD_SHA  nodejs.tar.gz" | sha256sum -c - \
     && tar -xzf "nodejs.tar.gz" -C /usr/local --strip-components=1 \
     && ln -s /usr/local/bin/node /usr/local/bin/nodejs \
-    && npm install --global grunt-cli@1.4.3
+    && npm install --global grunt@1.6.1 grunt-cli@1.4.3
 
 FROM base AS final
 COPY --from=build /usr/local/bin /usr/local/bin
